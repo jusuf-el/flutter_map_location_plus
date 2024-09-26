@@ -51,7 +51,7 @@
     },
     {
       "name": "flutter_map",
-      "rootUri": "file:///Users/jusuf/.pub-cache/hosted/pub.dev/flutter_map-0.14.0",
+      "rootUri": "file:///Users/jusuf/.pub-cache/hosted/pub.dev/flutter_map-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -194,6 +194,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "polylabel",
+      "rootUri": "file:///Users/jusuf/.pub-cache/hosted/pub.dev/polylabel-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.13"
+    },
+    {
       "name": "positioned_tap_detector_2",
       "rootUri": "file:///Users/jusuf/.pub-cache/hosted/pub.dev/positioned_tap_detector_2-1.0.4",
       "packageUri": "lib/",
@@ -248,12 +254,6 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "transparent_image",
-      "rootUri": "file:///Users/jusuf/.pub-cache/hosted/pub.dev/transparent_image-2.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "tuple",
       "rootUri": "file:///Users/jusuf/.pub-cache/hosted/pub.dev/tuple-2.0.2",
       "packageUri": "lib/",
@@ -296,7 +296,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-09-26T08:30:32.879932Z",
+  "generated": "2024-09-26T08:36:03.166483Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///Users/jusuf/Flutter/flutter",
