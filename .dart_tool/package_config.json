@@ -68,12 +68,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_map_location",
-      "rootUri": "../../",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///Users/jusuf/Flutter/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -314,13 +308,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_map_location_example",
+      "name": "flutter_map_location",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-09-26T13:27:08.682429Z",
+  "generated": "2024-09-26T13:27:08.648458Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///Users/jusuf/Flutter/flutter",
