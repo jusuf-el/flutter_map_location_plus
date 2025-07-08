@@ -21,37 +21,37 @@ class _TestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: FlutterMap(
-            options: MapOptions(
-              plugins: <MapPlugin>[
-                LocationPlugin(),
-              ],
-            ),
-            layers: <LayerOptions>[
-              TileLayerOptions(
-                  urlTemplate: 'https://{s}.tile.example.org/{z}/{x}/{y}.png',
-                  subdomains: <String>['a', 'b', 'c']),
-              LocationOptions(
-                (BuildContext context,
-                    ValueNotifier<LocationServiceStatus> status,
-                    Function onPressed) {
-                  return Align(
-                    alignment: Alignment.bottomRight,
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 16.0, right: 16.0),
-                      child: FloatingActionButton(
-                          child: const Icon(
-                            Icons.location_searching,
-                          ),
-                          onPressed: () {}),
-                    ),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
+        // body: Center(
+        //   child: FlutterMap(
+        //     options: MapOptions(
+        //       plugins: <MapPlugin>[
+        //         LocationPlugin(),
+        //       ],
+        //     ),
+        //     layers: <LayerOptions>[
+        //       TileLayerOptions(
+        //           urlTemplate: 'https://{s}.tile.example.org/{z}/{x}/{y}.png',
+        //           subdomains: <String>['a', 'b', 'c']),
+        //       LocationOptions(
+        //         (BuildContext context,
+        //             ValueNotifier<LocationServiceStatus> status,
+        //             Function onPressed) {
+        //           return Align(
+        //             alignment: Alignment.bottomRight,
+        //             child: Padding(
+        //               padding: const EdgeInsets.only(bottom: 16.0, right: 16.0),
+        //               child: FloatingActionButton(
+        //                   child: const Icon(
+        //                     Icons.location_searching,
+        //                   ),
+        //                   onPressed: () {}),
+        //             ),
+        //           );
+        //         },
+        //       ),
+        //     ],
+        //   ),
+        // ),
       ),
     );
   }

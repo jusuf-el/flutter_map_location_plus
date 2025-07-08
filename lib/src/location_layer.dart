@@ -31,7 +31,7 @@ class LocationLayer extends StatefulWidget {
       : super(key: key);
 
   final LocationOptions options;
-  final MapState map;
+  final FlutterMapState map;
   final Stream<void> stream;
 
   @override
@@ -110,8 +110,8 @@ class _LocationLayerState extends State<LocationLayer>
               final Marker marker = customBuilder != null
                   ? customBuilder(context, ld, _heading)
                   : _defaultMarkerBuilder(context, ld, _heading);
-              return MarkerLayerWidget(
-                  options: MarkerLayerOptions(markers: <Marker>[marker]));
+              return MarkerLayer(
+                  markers: <Marker>[marker]);
             }),
         widget.options.buttonBuilder(context, _serviceStatus, () async {
           // Check if there is no location subscription, no location value or the location service is off.

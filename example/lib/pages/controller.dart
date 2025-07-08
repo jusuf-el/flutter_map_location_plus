@@ -44,18 +44,18 @@ class _ControllerPageState extends State<ControllerPage> {
             child: FlutterMap(
               mapController: _mapController,
               options: MapOptions(
-                plugins: <MapPlugin>[
-                  LocationPlugin(),
-                ],
+                // plugins: <MapPlugin>[
+                //   LocationPlugin(),
+                // ],
               ),
-              layers: <LayerOptions>[
-                TileLayerOptions(
+              children: [
+                TileLayer(
                   urlTemplate:
                       'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                   subdomains: <String>['a', 'b', 'c'],
                 ),
               ],
-              nonRotatedLayers: <LayerOptions>[
+              nonRotatedChildren: [
                 LocationOptions(
                   locationButton(),
                   controller: _locationController,

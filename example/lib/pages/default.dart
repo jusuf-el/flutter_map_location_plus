@@ -26,19 +26,19 @@ class _DefaultPageState extends State<DefaultPage> {
           child: FlutterMap(
             mapController: mapController,
             options: MapOptions(
-              plugins: <MapPlugin>[
-                // USAGE NOTE 2: Add the plugin
-                LocationPlugin(),
-              ],
+              // plugins: <MapPlugin>[
+              //   // USAGE NOTE 2: Add the plugin
+              //   LocationPlugin(),
+              // ],
             ),
-            layers: <LayerOptions>[
-              TileLayerOptions(
+            children: [
+              TileLayer(
                 urlTemplate:
                     'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 subdomains: <String>['a', 'b', 'c'],
               ),
             ],
-            nonRotatedLayers: <LayerOptions>[
+            nonRotatedChildren: [
               // USAGE NOTE 3: Add the options for the plugin
               LocationOptions(
                 locationButton(),
